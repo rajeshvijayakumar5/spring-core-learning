@@ -7,9 +7,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan("learning.spring.core")
-public class SpringCoreLearning {
+public class SpringLearningAnnotationApp {
     public static void main(String[] args) {
-        ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringCoreLearning.class);
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringLearningAnnotationApp.class);
         Customer cus = ctx.getBean(Customer.class);
         System.out.println(cus.getMessage());
     }
