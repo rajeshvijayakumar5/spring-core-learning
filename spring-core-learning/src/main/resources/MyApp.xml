@@ -7,4 +7,9 @@
         <constructor-arg ref="customerService"/>
     </bean>
     <bean id="customerService" class="learning.spring.core.CustomerService"/>
+    <bean id="product" class="learning.spring.core.Product">
+        <property name="price">
+            <value type="java.lang.Double">200</value>
+        </property>
+    </bean>
 </beans>

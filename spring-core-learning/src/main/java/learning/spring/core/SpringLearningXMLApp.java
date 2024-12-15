@@ -8,5 +8,7 @@ public class SpringLearningXMLApp {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("MyApp.xml");
         Customer cus = ctx.getBean(Customer.class);
         System.out.println(cus.getMessage());
+        Product product = ctx.getBean(Product.class);
+        System.out.println(product.getPrice().getClass()+" "+product.getPrice());
     }
 }
